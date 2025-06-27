@@ -92,6 +92,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   confirm.addEventListener("click", () => {
     localStorage.clear();
-    window.location.href = "welcome.html";
+    window.location.href = "index.html";
   });
 });
