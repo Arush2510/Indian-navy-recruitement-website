@@ -2,9 +2,9 @@ AOS.init();
 
 // Image slider logic
 const sliderImages = [
-  "../assets/navy1.png",
-  "../assets/navy2.jpg",
-  "../assets/navy3.jpg"
+  "navy1.png",
+  "navy2.jpg",
+  "navy3.jpg"
 ];
 let sliderIndex = 0;
 const sliderImg = document.getElementById("sliderImage");
