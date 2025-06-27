@@ -1,9 +1,9 @@
 // Background image slideshow
 const images = [
-  "../assets/bgimg.jpg",
-  "../assets/bgimg2.jpg",
-  "../assets/bgimg4.jpg",
-  "../assets/bgimg5.jpg"
+  "bgimg.jpg",
+  "bgimg2.jpg",
+  "bgimg4.jpg",
+  "bgimg5.jpg"
 ];
 
 let current = 0;
