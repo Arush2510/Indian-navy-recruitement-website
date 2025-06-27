@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indian Navy - Dashboard</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;700;800"
+    />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+      body {
+        font-family: 'Plus Jakarta Sans', 'Noto Sans', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="text-white min-h-screen bg-cover bg-center bg-no-repeat bg-[#2563EB]">
+    <!-- Navigation -->
+    <div class="w-full bg-black text-white flex items-center justify-between px-6 py-4 fixed top-0 z-50">
+      <div class="flex items-center gap-3">
+        <img src="../assets/indian-navy-logo.png" alt="Navy Logo" class="h-17 w-16 object-contain" />
+      </div>
+      <div class="absolute left-1/2 transform -translate-x-1/2">
+        <span class="text-lg font-bold tracking-wide">THE INDIAN NAVY</span>
+      </div>
+      <div class="flex gap-4">
+        <button onclick="window.location.href='register.html'" class="bg-blue-700 px-4 py-2 rounded-full font-bold hover:bg-gray-600 transition-colors duration-300"><u>New User</u></button>
+        <button id="logoutBtn" class="border border-black text-white font-bold bg-[#FF0000] px-4 py-2 rounded-full hover:bg-gray-600 transition-colors duration-300"><u>Logout</u></button>
+      </div>
+    </div>
+
+    <!-- Content Section -->
+    <div class="pt-28 px-6 min-h-screen flex flex-col items-center justify-start gap-16">
+      <!-- Two Vertical Rectangles (100% height) -->
+      <div class="w-full max-w-6xl flex flex-col md:flex-row gap-8 h-[100vh]">
+        <!-- Left Box with Image Slider -->
+        <div
+          class="flex-1 rounded-xl shadow-2xl shadow-black p-0 overflow-hidden relative bg-center"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <div class="relative w-full h-full">
+            <img
+              id="sliderImage"
+              src="../assets/navy1.png"
+              class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-100"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <!-- Right Box with user info -->
+        <div
+          class="flex-1 bg-[#1a1a1a]/80 backdrop-blur-md rounded-xl p-8 overflow-auto shadow-2xl shadow-black"
+          data-aos="fade-left"
+          data-aos-duration="600"
+        >
+          <h2 class="text-2xl font-bold mb-4" id="welcomeText">Welcome<span id="welcomeText">, Loading...</span>!</h2>
+          <p class="text-sm text-gray-300 mb-2"><strong>Full Name:</strong> <span id="fullName">Loading...</span></p>
+          <p class="text-sm text-gray-300 mb-2"><strong>Email:</strong> <span id="email">Loading...</span></p>
+          <p class="text-sm text-gray-300"><strong>Phone:</strong> <span id="phone">Loading...</span></p>
+        </div>
+      </div>
+
+      <!-- Scroll Section: Horizontal Rectangle -->
+      <div
+        class="w-full max-w-5xl bg-[#1a1a1a] rounded-xl shadow-lg p-12 mt-12 h-[300px]"
+        data-aos="fade-up"
+        data-aos-duration="600"
+      >
+        <h2 class="text-2xl font-bold mb-4 text-center">|| <u>ANNOUNCEMENTS</u> ||</h2>
+        <p class="text-sm text-gray-300 text-center">
+          No Applications Open Yet...
+        </p>
+      </div>
+    </div>
+
+    <!-- AOS and JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="../js/dashboard.js"></script>
+    <!-- Logout Confirmation Modal -->
+<div
+  id="logoutModal"
+  class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50"
+>
+  <div class="bg-black rounded-xl p-6 text-center w-[90%] max-w-sm shadow-2xl">
+    <p class="text-xl font-bold text-white mb-6">Do you really want to log out?</p>
+    <div class="flex justify-center gap-4">
+      <button
+        id="confirmLogout"
+        class="bg-gray-700 hover:bg-gray-400 text-white font-bold px-4 py-2 rounded"
+      >
+        Yes, Leave
+      </button>
+      <button
+        id="cancelLogout"
+        class="bg-[#000080] hover:bg-blue-300 text-white font-bold px-4 py-2 rounded"
+      >
+        No, Stay
+      </button>
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>

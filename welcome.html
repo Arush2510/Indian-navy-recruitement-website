@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Indian Navy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;700;800"
+    />
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="../css/welcomestyle.css" />
+    <script defer src="../js/welcomejava.js"></script>
+  </head>
+
+  <body
+    style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'
+    class="overflow-x-hidden bg-[#2563EB]"
+  >
+    <!-- Top Navigation Bar -->
+    <div class="w-full bg-black text-white flex items-center px-6 py-3 fixed top-0 z-[60]">
+      <!-- Left Logo -->
+      <div class="flex items-center gap-3">
+        <img src="../assets/indian-navy-logo.png" alt="Navy Logo" class="h-16 w-16 object-contain" />
+      </div>
+
+      <!-- Centered Title -->
+      <div class="absolute left-1/2 transform -translate-x-1/2">
+        <span class="text-xl font-bold tracking-wide">THE INDIAN NAVY</span>
+      </div>
+
+      <!-- Right Buttons -->
+      <div class="ml-auto flex gap-4">
+        <button
+          onclick="window.location.href='login.html'"
+          class="bg-black hover:bg-gray-600 transition-colors duration-300 px-4 py-2 rounded-full text-sm font-bold border border-white"
+        >
+          Login
+        </button>
+        <button
+          onclick="window.location.href='register.html'"
+          class="bg-[#000080] hover:bg-gray-600 transition-colors duration-300 px-4 py-2 rounded-full text-sm font-bold"
+        >
+          Register
+        </button>
+      </div>
+    </div>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar fixed mt-[80px] w-full z-40 bg-white text-black text-center py-2">
+      <div class="announcement-text"
+      onclick="window.location.href='login.html'">⚓ Join the Indian Navy - Applications Now Open! ⚓</div>
+    </div>
+
+    <!-- Main Page Content with spacing for fixed bars -->
+    <div class="pt-[120px] px-4 sm:px-8 md:px-20 lg:px-40">
+      <!-- Background Image Section -->
+      <div id="bgSliderWrapper" class="relative min-h-[750px] w-full overflow-hidden rounded-xl"
+      data-aos="fade-up"
+      data-aos-duration="800">
+        <div
+          id="bg1"
+          class="absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 opacity-100"
+          style='background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)), url("../assets/bgimg.jpg");'
+        ></div>
+        <div
+          id="bg2"
+          class="absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 opacity-0"
+        ></div>
+
+        <!-- Hero Text Content -->
+        <div class="relative z-10 flex flex-col items-center justify-center min-h-[750px] p-4 text-center gap-4">
+          <h1 class="text-white text-5xl font-black drop-shadow-[2px_2px_2px_black]">
+            Join the Indian Navy
+          </h1>
+          <h2 class="text-white text-lg font-normal drop-shadow-[2px_2px_2px_black]">
+            An ocean of opportunities awaits...
+          </h2>
+          <div class="text-white text-xs font-normal drop-shadow-[2px_2px_2px_black]">
+            Please Login/Register to continue.
+          </div>
+          <div class="flex gap-4 mt-4">
+            <button
+              onclick="window.location.href='login.html'"
+              class="bg-black hover:bg-gray-400 transition duration-300 text-white font-bold py-2 px-6 rounded-full"
+            >
+              Login
+            </button>
+            <button
+              onclick="window.location.href='register.html'"
+              class="bg-[#000080] hover:bg-gray-400 transition duration-300 text-white font-bold py-2 px-6 rounded-full"
+            >
+              Register
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Section -->
+      <div
+        class="bg-blue-200 rounded-xl p-6 mx-4 my-10 shadow-md"
+        data-aos="fade-up"
+        data-aos-duration="800"
+      >
+        <h2 class="text-black text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+          The Indian Navy: Guardians of the Sea, Pride of the Nation
+        </h2>
+        <p class="text-black text-base font-normal leading-normal pb-3 pt-1 px-4">
+          The Indian Navy stands as a beacon of strength, honour, and adventure — a force where courage
+          meets the sea and legends are born. As guardians of India’s vast maritime frontiers, they sail
+          with unmatched power, from mighty aircraft carriers slicing through the waves to silent
+          submarines defending the deep. But beyond the steel and strategy lies a spirit of service,
+          discipline, and pride — a life filled with purpose, global recognition, and boundless horizons.
+          To wear the white uniform is to rise above the ordinary, to lead with honour, and to protect the
+          nation with unwavering resolve. Join the Indian Navy — and become part of a timeless legacy
+          written on the tides of glory.
+        </p>
+      </div>
+
+      <!-- Mission Image -->
+      <div
+        class="w-full aspect-[3/2] rounded-xl overflow-hidden my-8"
+        data-aos="fade-up"
+        data-aos-duration="800"
+      >
+        <div
+          class="w-full h-full bg-center bg-cover bg-no-repeat"
+          style='background-image: url("../assets/welcomepageimg.jpg");'
+        ></div>
+      </div>
+
+      <!-- Mission Text -->
+      <div
+        class="bg-blue-300 rounded-xl p-6 mx-4 my-10 shadow-md"
+        data-aos="fade-up"
+        data-aos-duration="800"
+      >
+        <h2 class="text-black text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+          Our Mission
+        </h2>
+        <p class="text-black text-base font-normal leading-normal pb-12 px-4">
+          Our mission is to empower individuals and businesses with the tools and resources they need to
+          succeed in today's dynamic world. We are driven by a passion for innovation and a commitment to
+          delivering value to our users. We believe in fostering a collaborative environment where
+          creativity and ingenuity thrive. Our goal is to create a platform that not only meets the current
+          needs of our users but also anticipates and adapts to future challenges and opportunities.
+        </p>
+      </div>
+    </div>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

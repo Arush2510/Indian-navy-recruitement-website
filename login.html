@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indian Navy - Login</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;700;800"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="../js/login.js" defer></script>
+    <style>
+      body {
+        font-family: 'Plus Jakarta Sans', 'Noto Sans', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="text-white min-h-screen bg-cover bg-center bg-no-repeat" style="background-image: url('../assets/indian-navy-marching.jpg');">
+    <!-- Navigation Bar -->
+    <div class="w-full bg-black text-white flex items-center justify-between px-6 py-4 fixed top-0 z-50">
+      <div class="flex items-center gap-3">
+        <img src="../assets/indian-navy-logo.png" alt="Navy Logo" class="h-17 w-16 object-contain" />
+      </div>
+      <div class="absolute left-1/2 transform -translate-x-1/2">
+        <span class="text-lg font-bold tracking-wide">THE INDIAN NAVY</span>
+      </div>
+      <div class="flex gap-4">
+        <button
+          onclick="window.location.href='welcome.html'"
+          class="bg-black hover:bg-gray-600 transition-colors duration-300 px-4 py-2 rounded-full text-sm font-bold border border-white"
+        >
+          Home
+        </button>
+        <button
+          onclick="window.location.href='register.html'"
+          class="bg-[#000080] hover:bg-gray-600 transition-colors duration-300 px-4 py-2 rounded-full text-sm font-bold"
+        >
+          Register
+        </button>
+      </div>
+    </div>
+
+    <!-- Login Form Container -->
+    <div class="flex items-center justify-center pt-36 px-4">
+      <div class="bg-[#1a1a1a] rounded-xl shadow-lg p-8 max-w-md w-full">
+        <h2 class="text-2xl font-bold text-center mb-6">Login to Your Account</h2>
+        <form id="loginForm">
+          <div class="mb-4">
+            <label class="block mb-2 text-sm font-medium">Email Address</label>
+            <input
+              name="email"
+              type="email"
+              placeholder="Enter your email"
+              required
+              class="w-full rounded-lg bg-[#272b3a] text-white px-4 py-3 focus:outline-none placeholder:text-[#9ba1bb]"
+            />
+          </div>
+          <div class="mb-6">
+            <label class="block mb-2 text-sm font-medium">Password</label>
+            <input
+              name="password"
+              type="password"
+              placeholder="Enter your password"
+              required
+              class="w-full rounded-lg bg-[#272b3a] text-white px-4 py-3 focus:outline-none placeholder:text-[#9ba1bb]"
+            />
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-[#4768fa] hover:bg-blue-700 transition-colors duration-300 py-3 rounded-full text-sm font-bold"
+          >
+            Login
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
